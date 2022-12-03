@@ -64,7 +64,7 @@ p {
   width: 9vw;
 }
 .poster1{
-  height: 79vh;
+  height: auto;
 }
 @media screen and (max-width: 500px) {
   * {
