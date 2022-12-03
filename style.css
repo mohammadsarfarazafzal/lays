@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  cursor: url(assests/cursor.png), auto;
+}
+
+body {
+  background-color: #febe38;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f42625;
+  border-radius: 100vw;
+  margin-block: 4.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 1rem;
+  border-radius: 100vw;
+  background-color: #F4EA56;
+  border:0.21rem solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover{
+  background-color: #FFCD19;
+}
+p {
+  color: red;
+}
+.navbar{
+  height: 13vh;
+  border-radius: 100vh;
+  margin: 1.5% 1.5%;
+}
+.navlogo{
+  width: 5vw;
+}
+.cbutton{
+  border-color: transparent;
+  color:#0C0404;
+  font-family: 'Carter One', cursive;
+  font-size: 19px;
+}
+@media screen and (max-width: 500px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    cursor: url(assests/cursor.png), auto;
+  }
+  
+  body {
+    background-color: #febe38;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f42625;
+    border-radius: 100vw;
+    margin-block: 4.3rem;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    width: 1rem;
+    border-radius: 100vw;
+    background-color: #F4EA56;
+    border:0.21rem solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover{
+    background-color: #FFCD19;
+  }
+  p {
+    color: red;
+  }
+  .navbar{
+    height: 5vh;
+    border-radius: 100vh;
+    margin: 1.5% 1.5%;
+  }
+  .navlogo{
+    width: 5vw;
+  }
+  .cbutton{
+    border-color: transparent;
+    color:#0C0404;
+    font-family: 'Carter One', cursive;
+    font-size: 19px;
+  }
+}
