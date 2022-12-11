@@ -363,13 +363,24 @@
     <div class="social">
       <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Get Social</h1>
       <div id="carouselExampleControls" class="carousel slide socialcarousel" data-bs-ride="carousel">
-        <button onmouseover="visible(this)" onmouseout="hide(this)" type="button"
-          class="btn btn-lg btn-danger likebutton" data-bs-container="body" data-bs-trigger="focus delay"
-          data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Thank You 💖">
-          <span class="material-symbols-outlined">
+        <button onmouseout="hide(this)" onmouseover="visible(this)" type="button" class="btn btn-danger likebutton"
+          id="liveToastBtn"><span class="material-symbols-outlined heart">
             favorite
-          </span>
-        </button>
+          </span></button>
+
+        <div style="margin-bottom: 31%; margin-right: 31%;" class="toast-container position-fixed bottom-0 end-0 p-3">
+          <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+              <img style="width: 25px; height: 25px;" src="assets/webtabicon.png" class="rounded me-2" alt="laysicon">
+              <strong class="me-auto">Lay's</strong>
+              <small>1 sec ago</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+              Thank You 💖
+            </div>
+          </div>
+        </div>
         <div class="carousel-inner carouselinner">
           <div class="carousel-item active"><a href="https://www.instagram.com/lays/" target="_blank"><img
                 src="assets/post1.jpg" class="d-block w-100 postitem" alt="post1"></a>
@@ -399,15 +410,83 @@
       </h1>
       <div class="sites">
         <div class="flexing">
-          <img src="assets/site1.png" alt="">
-          <img src="assets/site2.png" alt="">
+          <a href="http://www.facebook.com/lays/" target="_blank" rel="noopener noreferrer"><img class="fb"
+              src="assets/site1.png" alt="facebook"></a>
+          <div class="twt"><a href="https://twitter.com/lays/" target="_blank"><img src="assets/site2.png"
+                alt="twitter"></div></a>
         </div>
-        <div class="flexing inst">
+        <div class="flexing">
+          <a href="http://www.instagram.com/lays/" target="_blank" rel="noopener noreferrer"><img class="inst"
+              src="assets/site3.png" alt="instagram"></a>
+          <a href="https://www.youtube.com/user/Lays/videos" target="_blank" rel="noopener noreferrer"><img class="yt"
+              src="assets/site4.png" alt="youtube"></a>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer"></div>
+  <div class="footer">
+    <div class="dnavigation">
+      <nav class="navbar navbar-expand-lg footnav" style="background-color: #ffe63f;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="navlogo"
+              src="https://seeklogo.com/images/L/lay-s-logo-E89818A5B3-seeklogo.com.png" alt="Lay's logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="dropdown">
+                  <a class="cbutton btn btn-outline-danger dropdown-toggle" href="#" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                  </a>
+                  <ul class="items dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                    <li><a class="dropdown-item" href="#link1">LAY'S</a></li>
+                    <li><a class="dropdown-item" href="#link2">LAY'S BETTER</a></li>
+                    <li><a class="dropdown-item" href="#link3">LAY'S DIPS</a></li>
+                    <li><a class="dropdown-item" href="#link4">LAY'S KETTLE</a></li>
+                    <li><a class="dropdown-item" href="#link5">LAY'S LAYERS</a></li>
+                    <li><a class="dropdown-item" href="#link6">LAY'S POPPABLE</a></li>
+                    <li><a class="dropdown-item" href="#link7">LAY'S STAX</a></li>
+                    <li><a class="dropdown-item" href="#link8">LAY'S WAVY</a></li>
+                    <li><a class="dropdown-item" href="#link9">LAY'S VARIETY</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a href="#"><button type="button" class="cbutton btn btn-outline-danger">About Us</button></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a href="#videoslink"><button type="button" class="cbutton btn btn-outline-danger">Videos</button></a>
+              </li>
+              <li class="nav-item">
+                <a href="#recipeslink"><button type="button" class="cbutton btn btn-outline-danger">Recipes</button></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><button type="button" class="cbutton btn btn-outline-danger">Where to Buy</button></a>
+              </li>
+              <li class="nav-item">
+                <a href="#"><button type="button" class="cbutton btn btn-outline-danger">PepsiCo Tasty
+                    Rewards</button></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="txtbox form-control me-2" type="search" placeholder="Search" />
+              <button class="cbutton btn btn-sm btn-outline-danger" type="submit"
+                style="align-items: center; text-align: center; display: flex; justify-content: center; border-radius: 100vw;">
+                <span class="material-symbols-outlined">
+                  search
+                </span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
