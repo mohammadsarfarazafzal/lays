@@ -77,14 +77,59 @@ h5 {
   border-radius: 3vw;
 }
 
-.videos {
+.videos::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-image: url(assets/videosback.jpg);
-  background-size: 161vw;
+  z-index: -1;
+  opacity: 1;
+  background-size: 150%;
+  border-radius: 3vw;
+}
+
+.videos {
+  position: relative;
   width: auto;
   height: auto;
   margin: 3% 3%;
   padding: 3% 3%;
   border-radius: 3vw;
+}
+
+.videocenter {
+  display: flex;
+  justify-content: center;
+}
+
+.social {
+  background-image: url(assets/socialback.jpg);
+  margin: 0% 3%;
+  width: 50vw;
+  height: 35vw;
+  padding: 3% 3%;
+  border-radius: 3vw;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.connect {
+  background-image: url(assets/socialback.jpg);
+  margin: 0% 3%;
+  width: 50vw;
+  height: 35vw;
+  height: auto;
+  padding: 3% 3%;
+  border-radius: 3vw;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-around;
 }
 
 .recipescarousel {
@@ -94,17 +139,25 @@ h5 {
 }
 
 .posteritem {
-  transition: transform 300ms;
+  transition: transform 300ms ease-in-out;
 }
 
-.posteritem:hover {
-  transform: scale(1.1);
+.posteritem:hover,
+.posteritem:focus-visible {
+  transform: rotate(-0.3deg);
 }
 
 .videoscarousel {
   margin: 3% 5%;
-  box-shadow: 0px 1px 9px 3px black;
+  box-shadow: 0px 1px 7px 3px black;
   border-radius: 3vw;
+  width: 67vw;
+  transition: transform 300ms ease-in-out;
+}
+
+.videoscarousel:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 1px 9px 2.5px black;
 }
 
 .carouselinner {
@@ -114,6 +167,7 @@ h5 {
 .back {
   display: flex;
   justify-content: space-around;
+  gap: 3%;
   margin: 5% 1%;
 }
 
@@ -167,7 +221,8 @@ h5 {
   color: #f42625;
 }
 
-.learn:hover {
+.learn:hover,
+.learn:focus-visible {
   background-color: #f42625;
   color: antiquewhite;
 }
@@ -184,53 +239,121 @@ h3 {
 }
 
 .card {
-  transition: transform 300ms;
+  transition: transform 300ms ease-out;
   height: auto;
 }
 
-.card1:hover {
+.card1:hover,
+.card1:focus-visible {
   box-shadow: 0px 0px 25px 3px #fee466;
   transform: scale(1.1);
 }
 
-.card2:hover {
+.card2:hover,
+.card2:focus-visible {
   box-shadow: 0px 0px 25px 3px #c5eaf9;
   transform: scale(1.1);
 }
 
-.card3:hover {
+.card3:hover,
+.card3:focus-visible {
   box-shadow: 0px 0px 25px 3px #295b87;
   transform: scale(1.1);
 }
 
-.card4:hover {
+.card4:hover,
+.card4:focus-visible {
   box-shadow: 0px 0px 25px 3px #ef8122;
   transform: scale(1.1);
 }
 
-.card5:hover {
+.card5:hover,
+.card5:focus {
   box-shadow: 0px 0px 25px 3px #f11133;
   transform: scale(1.1);
 }
 
-.card6:hover {
+.card6:hover,
+.card6:focus-visible {
   box-shadow: 0px 0px 25px 3px #2a6bdc;
   transform: scale(1.1);
 }
 
-.card7:hover {
+.card7:hover,
+.card7:focus {
   box-shadow: 0px 0px 25px 3px #ffad3b;
   transform: scale(1.1);
 }
 
-.card8:hover {
+.card8:hover,
+.card8:focus {
   box-shadow: 0px 0px 25px 3px #d7000f;
   transform: scale(1.1);
 }
 
-.card9:hover {
+.card9:hover,
+.card9:focus-visible {
   box-shadow: 0px 0px 25px 3px #00eb94;
   transform: scale(1.1);
+}
+
+.socialcarousel {
+  transform: rotate(90deg);
+  margin: 3% 5%;
+  position: absolute;
+  z-index: 1;
+  width: 25vw;
+  top: 7vw;
+  left: 7vw;
+}
+
+.likebutton {
+  position: absolute;
+  z-index: 2;
+  transform: rotate(-90deg);
+  top: 9.5vw;
+  left: 9.5vw;
+  border-radius: 5vw;
+  padding: 1% 1%;
+  text-align: center;
+  border: none;
+}
+
+.material-symbols-outlined {
+  padding-top: 1vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  font-size: 3rem;
+}
+
+.likebutton:hover {
+  background-color: transparent;
+  color: #d7000f;
+  border: none;
+}
+
+.postitem {
+  transition: transform 300ms ease-in-out;
+}
+
+.postitem:hover,
+.postitem:focus {
+  transform: scale(1.03);
+}
+
+.flexing {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1vw;
+}
+
+.siteicon {
+  width: 11vw;
+  height: 11vw;
+}
+
+.fb {
+  color: #4267B2;
 }
 
 @keyframes animefade {
