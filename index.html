@@ -7,6 +7,8 @@
   <!--Icons used in website-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Lay's Home</title>
@@ -129,7 +131,7 @@
     </div>
   </div>
   <div class="face">
-    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button style="border-radius: 17px; height: 7px; background-color: #f42625;" type="button"
           data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"
@@ -140,20 +142,20 @@
           data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner carouselinner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="1599">
           <img src="assets/poster1.jpg" class="poster1 d-block w-100" alt="poster1">
           <div class="carousel-caption d-none d-md-block">
             <h5></h5>
             <p></p>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="1599">
           <img src="assets/poster2.jpg" class="poster1 d-block w-100" alt="poster2">
           <div class="carousel-caption d-none d-md-block">
             <a href="#"><button type="button" class="cbutton learn btn btn-warning">Learn More</button></a>
           </div>
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="2599">
           <img src="assets/poster3.jpg" class="poster1 d-block w-100" alt="poster3">
           <div class="carousel-caption d-none d-md-block">
             <div id="liveAlertPlaceholder"></div>
@@ -322,43 +324,89 @@
   </div>
   <div id="videoslink" class="videos">
     <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Videos</h1>
-    <div id="carouselExampleInterval2" class="carousel slide videoscarousel carousel-dark slide"
-      data-bs-ride="carousel">
-      <div class="carousel-inner carouselinner">
-        <div class="carousel-item active" data-bs-interval="1599">
-          <iframe class="d-block w-100" height="511px" src="https://www.youtube.com/embed/JGnhYzaL7As"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+    <div class="videocenter">
+      <div id="carouselExampleInterval" class="carousel videoscarousel slide" data-bs-ride="false">
+        <div class="carousel-inner carouselinner">
+          <div class="carousel-item active">
+            <iframe class="d-block w-100" height="429vw" src="https://www.youtube.com/embed/JGnhYzaL7As"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe class="d-block w-100" height="429vw" src="https://www.youtube.com/embed/y5EzbY2Mg4Y"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="carousel-item">
+            <iframe class="d-block w-100" height="429vw" src="https://www.youtube.com/embed/WnO_vmxTdyY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="carousel-item" data-bs-interval="2999">
-          <iframe class="d-block w-100" height="511px" src="https://www.youtube.com/embed/y5EzbY2Mg4Y"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <div class="carousel-item">
-          <iframe class="d-block w-100" height="511px" src="https://www.youtube.com/embed/K5PB4trTfXI"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
-  <div class="social"></div>
-  <div class="connect"></div>
-  <div class="foot"></div>
+  <div class="foot">
+    <div class="social">
+      <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Get Social</h1>
+      <div id="carouselExampleControls" class="carousel slide socialcarousel" data-bs-ride="carousel">
+        <button onmouseover="visible(this)" onmouseout="hide(this)" type="button"
+          class="btn btn-lg btn-danger likebutton" data-bs-container="body" data-bs-trigger="focus delay"
+          data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Thank You 💖">
+          <span class="material-symbols-outlined">
+            favorite
+          </span>
+        </button>
+        <div class="carousel-inner carouselinner">
+          <div class="carousel-item active"><a href="https://www.instagram.com/lays/" target="_blank"><img
+                src="assets/post1.jpg" class="d-block w-100 postitem" alt="post1"></a>
+          </div>
+          <div class="carousel-item"><a href="https://twitter.com/lays/" target="_blank"><img src="assets/post2.jpg"
+                class="d-block w-100 postitem" alt="post2"></a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://www.facebook.com/lays/" target="_blank"><img src="assets/post3.jpg"
+                class="d-block w-100 postitem" alt="post3"></a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="connect">
+      <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Connect With Us
+      </h1>
+      <div class="sites">
+        <div class="flexing">
+          <img src="assets/site1.png" alt="">
+          <img src="assets/site2.png" alt="">
+        </div>
+        <div class="flexing inst">
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="footer"></div>
   <!--Bootstrap JS-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
