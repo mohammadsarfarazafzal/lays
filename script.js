@@ -13,6 +13,18 @@ const alert = (message, type) => {
 const alertTrigger = document.getElementById('liveAlertBtn')
 if (alertTrigger) {
   alertTrigger.addEventListener('click', () => {
-    alert('😊😊😊😊😊😊😊😊😊', 'success')
+    alert('😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊😊', 'success')
   })
+}
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+function visible(x) {
+  x.style.background = "#e23945";
+  x.style.color = "white";
+  x.style.border = "none";
+}
+function hide(x) {
+  x.style.background = "transparent";
+  x.style.border = "none";
+  x.style.color = "transparent";
 }
