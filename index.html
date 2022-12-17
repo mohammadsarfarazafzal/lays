@@ -22,10 +22,9 @@
 <body>
   <div class="header">
     <div class="dnavigation">
-      <nav class="desknav navbar navbar-expand-lg" style="background-color: #ffe63f;">
+      <nav class="desknav navbar sticky-top navbar-expand-lg" style="background-color: #ffe63f;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="navlogo"
-              src="https://seeklogo.com/images/L/lay-s-logo-E89818A5B3-seeklogo.com.png" alt="Lay's logo"></a>
+          <a class="navbar-brand" href="#"><img class="navlogo" src="assets/navlogo.png" alt="Lay's logo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -53,7 +52,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a href="#"><button type="button" class="cbutton btn btn-outline-danger">About Us</button></a>
+                <a href="#sociallink"><button type="button" class="cbutton btn btn-outline-danger">About Us</button></a>
               </li>
               <li class="nav-item dropdown">
                 <a href="#videoslink"><button type="button" class="cbutton btn btn-outline-danger">Videos</button></a>
@@ -131,7 +130,7 @@
     </div>
   </div>
   <div class="face">
-    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-touch="true">
       <div class="carousel-indicators">
         <button style="border-radius: 17px; height: 7px; background-color: #f42625;" type="button"
           data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true"
@@ -142,14 +141,14 @@
           data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner carouselinner">
-        <div class="carousel-item active" data-bs-interval="1599">
+        <div class="carousel-item active" data-bs-interval="2599">
           <img src="assets/poster1.jpg" class="poster1 d-block w-100" alt="poster1">
           <div class="carousel-caption d-none d-md-block">
             <h5></h5>
             <p></p>
           </div>
         </div>
-        <div class="carousel-item" data-bs-interval="1599">
+        <div class="carousel-item" data-bs-interval="2599">
           <img src="assets/poster2.jpg" class="poster1 d-block w-100" alt="poster2">
           <div class="carousel-caption d-none d-md-block">
             <a href="#"><button type="button" class="cbutton learn btn btn-warning">Learn More</button></a>
@@ -176,9 +175,10 @@
     </div>
   </div>
   <div class="products">
-    <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Products</h1>
+    <h1 class="hidden1" style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">
+      Products</h1>
     <div class="back">
-      <div id="link1" class="card card1" style="width: 18rem; background-color: #dfb336;">
+      <div id="link1" class="card card1 hidden" style="width: 18rem; background-color: #dfb336;">
         <img src="assets/product1.jpg" class="card-img-top" alt="Lay's">
         <div class="card-body">
           <h3 class="card-title">Lay's</h3>
@@ -186,7 +186,7 @@
           <a href="#" class="cbutton btn learn btn-warning">View All</a>
         </div>
       </div>
-      <div id="link2" class="card card2" style="width: 18rem; background-color: #a7dff3;">
+      <div id="link2" class="card card2 hidden" style="width: 18rem; background-color: #a7dff3;">
         <img src="assets/product2.jpg" class="card-img-top" alt="Lay's Better">
         <div class="card-body">
           <h3 class="card-title">Lay's Better</h3>
@@ -194,7 +194,7 @@
           <a href="#" class="cbutton btn learn btn-warning">View All</a>
         </div>
       </div>
-      <div id="link3" class="card card3" style="width: 18rem; background-color: #346ea7;">
+      <div id="link3" class="card card3 hidden" style="width: 18rem; background-color: #346ea7;">
         <img src="assets/product3.jpg" class="card-img-top" alt="Lay's Dips">
         <div class="card-body">
           <h3 class="card-title">Lay's Dips</h3>
@@ -204,7 +204,7 @@
       </div>
     </div>
     <div class="back">
-      <div id="link4" class="card card4" style="width: 18rem; background-color: #dc9726;">
+      <div id="link4" class="card card4 hidden" style="width: 18rem; background-color: #dc9726;">
         <img src="assets/product4.jpg" class="card-img-top" alt="Lay's Kettle">
         <div class="card-body">
           <h3 class="card-title">Lay's Kettle</h3>
@@ -212,7 +212,7 @@
           <a href="#" class="cbutton btn learn btn-warning">View All</a>
         </div>
       </div>
-      <div id="link5" class="card card5" style="width: 18rem; background-color: #ba0e2e;">
+      <div id="link5" class="card card5 hidden" style="width: 18rem; background-color: #ba0e2e;">
         <img src="assets/product5.jpg" class="card-img-top" alt="Lay's Layers">
         <div class="card-body">
           <h3 class="card-title">Lay's Layers</h3>
@@ -220,7 +220,7 @@
           <a href="#" class="cbutton btn learn btn-warning">View All</a>
         </div>
       </div>
-      <div id="link6" class="card card6" style="width: 18rem; background-color: #1c4690;">
+      <div id="link6" class="card card6 hidden" style="width: 18rem; background-color: #1c4690;">
         <img src="assets/product6.jpg" class="card-img-top" alt="Lay's Poppables">
         <div class="card-body">
           <h3 class="card-title">Lay's Poppable</h3>
@@ -230,7 +230,7 @@
       </div>
     </div>
     <div class="back">
-      <div id="link7" class="card card7" style="width: 18rem; background-color: #d36a31;">
+      <div id="link7" class="card card7 hidden" style="width: 18rem; background-color: #d36a31;">
         <img src="assets/product7.jpg" class="card-img-top" alt="Lay's Stax">
         <div class="card-body">
           <h3 class="card-title">Lay's Stax</h3>
@@ -238,7 +238,7 @@
           <a href="#" class="cbutton btn learn btn-warning">View All</a>
         </div>
       </div>
-      <div id="link8" class="card card8" style="width: 18rem; background-color: #f45a50;">
+      <div id="link8" class="card card8 hidden" style="width: 18rem; background-color: #f45a50;">
         <img src="assets/product8.jpg" class="card-img-top" alt="Lay's Wavy">
         <div class="card-body">
           <h3 class="card-title">Lay's Wavy</h3>
@@ -246,7 +246,7 @@
           <a href="#" class="cbutton btn learn btn-warning">View All</a>
         </div>
       </div>
-      <div id="link9" class="card card9" style="width: 18rem; background-color: #00a05e;">
+      <div id="link9" class="card card9 hidden" style="width: 18rem; background-color: #00a05e;">
         <img src="assets/product9.jpg" class="card-img-top" alt="Lay's Variety Packs">
         <div class="card-body">
           <h3 class="card-title">Lay's Variety Pack</h3>
@@ -257,9 +257,10 @@
     </div>
   </div>
   <div id="recipeslink" class="recipes">
-    <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Recipes</h1>
+    <h1 class="hidden1" style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">
+      Recipes</h1>
     <div id="carouselExampleCaptions1" class="recipescarousel carousel carousel-dark slide carousel-fade"
-      data-bs-ride="false">
+      data-bs-ride="false" data-bs-touch="true">
       <div class="carousel-indicators">
         <button style="border-radius: 17px; height: 7px; background-color: #f42625;" type="button"
           data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true"
@@ -275,35 +276,35 @@
       </div>
       <div class="carousel-inner carouselinner">
         <div class="carousel-item active">
-          <img src="assets/recipe1.png" class="d-block w-100  posteritem" alt="recipe1">
+          <img src="assets/recipe1.png" class="d-block w-100  posteritem hidden2" alt="recipe1">
           <div class="carousel-caption d-none d-md-block">
             <h5>LAY’S Potato Chip Magic Bars ⭐4.3/5</h5>
             <a href="#"><button type="button" class="cbutton learn btn btn-warning">View Recipe</button></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/recipe2.png" class="d-block w-100  posteritem" alt="recipe2">
+          <img src="assets/recipe2.png" class="d-block w-100  posteritem hidden2" alt="recipe2">
           <div class="carousel-caption d-none d-md-block">
             <h5>LAY’S Flamin’ Hot Spicy Chicken Sandwich ⭐3.5/5</h5>
             <a href="#"></a><button type="button" class="cbutton learn btn btn-warning">View Recipe</button></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/recipe3.png" class="d-block w-100  posteritem" alt="recipe3">
+          <img src="assets/recipe3.png" class="d-block w-100  posteritem hidden2" alt="recipe3">
           <div class="carousel-caption d-none d-md-block">
             <h5>LAY’S Flamin’ Hot Dill Pickle Crusted Pickles ⭐4.1/5</h5>
             <a href="#"><button type="button" class="cbutton learn btn btn-warning">View Recipe</button></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/recipe4.png" class="d-block w-100  posteritem" alt="recipe4">
+          <img src="assets/recipe4.png" class="d-block w-100  posteritem hidden2" alt="recipe4">
           <div class="carousel-caption d-none d-md-block">
             <h5>LAY’S Wavy meet Jalapeño Popper Dip ⭐4.9/5</h5>
             <a href="#"><button type="button" class="cbutton learn btn btn-warning">View Recipe</button></a>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="assets/recipe5.png" class="d-block w-100  posteritem" alt="recipe5">
+          <img src="assets/recipe5.png" class="d-block w-100  posteritem hidden2" alt="recipe5">
           <div class="carousel-caption d-none d-md-block">
             <h5>LAY’S Ice Cream Sandwiches ⭐2.9/5</h5>
             <a href="#"><button type="button" class="cbutton learn btn btn-warning">View Recipe</button></a>
@@ -323,24 +324,25 @@
     </div>
   </div>
   <div id="videoslink" class="videos">
-    <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Videos</h1>
-    <div class="videocenter">
-      <div id="carouselExampleInterval" class="carousel videoscarousel slide" data-bs-ride="false">
+    <h1 class="hidden1" style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">
+      Videos</h1>
+    <div class="videocenter hidden3">
+      <div id="carouselExampleInterval" class="carousel videoscarousel slide" data-bs-ride="false" data-bs-touch="true">
         <div class="carousel-inner carouselinner">
           <div class="carousel-item active">
-            <iframe class="d-block w-100" height="429vw" src="https://www.youtube.com/embed/JGnhYzaL7As"
+            <iframe class="d-block w-100 ytvid" src="https://www.youtube.com/embed/JGnhYzaL7As"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="carousel-item">
-            <iframe class="d-block w-100" height="429vw" src="https://www.youtube.com/embed/y5EzbY2Mg4Y"
+            <iframe class="d-block w-100 ytvid" src="https://www.youtube.com/embed/y5EzbY2Mg4Y"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
           </div>
           <div class="carousel-item">
-            <iframe class="d-block w-100" height="429vw" src="https://www.youtube.com/embed/WnO_vmxTdyY"
+            <iframe class="d-block w-100 ytvid" src="https://www.youtube.com/embed/WnO_vmxTdyY"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
@@ -360,15 +362,17 @@
     </div>
   </div>
   <div class="foot">
-    <div class="social">
-      <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Get Social</h1>
-      <div id="carouselExampleControls" class="carousel slide socialcarousel" data-bs-ride="carousel">
+    <div id="sociallink" class="social">
+      <h1 class="hidden1" style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Get
+        Social</h1>
+      <div id="carouselExampleControls" class="carousel slide socialcarousel" data-bs-ride="carousel"
+        data-bs-touch="true">
         <button onmouseout="hide(this)" onmouseover="visible(this)" type="button" class="btn btn-danger likebutton"
           id="liveToastBtn"><span class="material-symbols-outlined heart">
             favorite
           </span></button>
 
-        <div style="margin-bottom: 31%; margin-right: 31%;" class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div class="toast-container position-fixed bottom-0 end-0 p-3">
           <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
             <div class="toast-header">
               <img style="width: 25px; height: 25px;" src="assets/webtabicon.png" class="rounded me-2" alt="laysicon">
@@ -382,15 +386,16 @@
           </div>
         </div>
         <div class="carousel-inner carouselinner">
-          <div class="carousel-item active"><a href="https://www.instagram.com/lays/" target="_blank"><img
-                src="assets/post1.jpg" class="d-block w-100 postitem" alt="post1"></a>
+          <div class="carousel-item active"><a draggable="false" href="https://www.instagram.com/lays/"
+              target="_blank"><img src="assets/post1.jpg" draggable="false" class="d-block w-100 postitem"
+                alt="post1"></a>
           </div>
-          <div class="carousel-item"><a href="https://twitter.com/lays/" target="_blank"><img src="assets/post2.jpg"
-                class="d-block w-100 postitem" alt="post2"></a>
+          <div class="carousel-item"><a draggable="false" href="https://twitter.com/lays/" target="_blank"><img
+                src="assets/post2.jpg" class="d-block w-100 postitem" draggable="false" alt="post2"></a>
           </div>
           <div class="carousel-item">
-            <a href="https://www.facebook.com/lays/" target="_blank"><img src="assets/post3.jpg"
-                class="d-block w-100 postitem" alt="post3"></a>
+            <a draggable="false" href="https://www.facebook.com/lays/" target="_blank"><img src="assets/post3.jpg"
+                class="d-block w-100 postitem" draggable="false" alt="post3"></a>
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -406,85 +411,45 @@
       </div>
     </div>
     <div class="connect">
-      <h1 style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">Connect With Us
+      <h1 class="hidden1" style="color: white; padding:0% 5.9%; font-family: 'Ubuntu', sans-serif; font-size: 51px;">
+        Connect With Us
       </h1>
       <div class="sites">
-        <div class="flexing">
+        <div class="flexing hidden4">
           <a href="http://www.facebook.com/lays/" target="_blank" rel="noopener noreferrer"><img class="fb"
               src="assets/site1.png" alt="facebook"></a>
           <div class="twt"><a href="https://twitter.com/lays/" target="_blank"><img src="assets/site2.png"
                 alt="twitter"></div></a>
         </div>
-        <div class="flexing">
+        <div class="flexing hidden5">
           <a href="http://www.instagram.com/lays/" target="_blank" rel="noopener noreferrer"><img class="inst"
               src="assets/site3.png" alt="instagram"></a>
           <a href="https://www.youtube.com/user/Lays/videos" target="_blank" rel="noopener noreferrer"><img class="yt"
               src="assets/site4.png" alt="youtube"></a>
         </div>
+        <div class="flexing hidden6">
+          <a href="" target="_blank" rel="noopener noreferrer"><img class="pint" src="assets/site5.png"
+              alt="pinterest"></a>
+          <a href="" target="_blank" rel="noopener noreferrer"><img class="lin" src="assets/site6.png"
+              alt="linkedin"></a>
+        </div>
       </div>
     </div>
   </div>
   <div class="footer">
-    <div class="dnavigation">
-      <nav class="navbar navbar-expand-lg footnav" style="background-color: #ffe63f;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="navlogo"
-              src="https://seeklogo.com/images/L/lay-s-logo-E89818A5B3-seeklogo.com.png" alt="Lay's logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <div class="dropdown">
-                  <a class="cbutton btn btn-outline-danger dropdown-toggle" href="#" role="button"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Products
-                  </a>
-                  <ul class="items dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-                    <li><a class="dropdown-item" href="#link1">LAY'S</a></li>
-                    <li><a class="dropdown-item" href="#link2">LAY'S BETTER</a></li>
-                    <li><a class="dropdown-item" href="#link3">LAY'S DIPS</a></li>
-                    <li><a class="dropdown-item" href="#link4">LAY'S KETTLE</a></li>
-                    <li><a class="dropdown-item" href="#link5">LAY'S LAYERS</a></li>
-                    <li><a class="dropdown-item" href="#link6">LAY'S POPPABLE</a></li>
-                    <li><a class="dropdown-item" href="#link7">LAY'S STAX</a></li>
-                    <li><a class="dropdown-item" href="#link8">LAY'S WAVY</a></li>
-                    <li><a class="dropdown-item" href="#link9">LAY'S VARIETY</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a href="#"><button type="button" class="cbutton btn btn-outline-danger">About Us</button></a>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="#videoslink"><button type="button" class="cbutton btn btn-outline-danger">Videos</button></a>
-              </li>
-              <li class="nav-item">
-                <a href="#recipeslink"><button type="button" class="cbutton btn btn-outline-danger">Recipes</button></a>
-              </li>
-              <li class="nav-item">
-                <a href="#"><button type="button" class="cbutton btn btn-outline-danger">Where to Buy</button></a>
-              </li>
-              <li class="nav-item">
-                <a href="#"><button type="button" class="cbutton btn btn-outline-danger">PepsiCo Tasty
-                    Rewards</button></a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="txtbox form-control me-2" type="search" placeholder="Search" />
-              <button class="cbutton btn btn-sm btn-outline-danger" type="submit"
-                style="align-items: center; text-align: center; display: flex; justify-content: center; border-radius: 100vw;">
-                <span class="material-symbols-outlined">
-                  search
-                </span>
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+    <div class="footerelements">
+      <div class="footflex">
+        <a href="#"><img class="navlogo" src="assets/navlogo.png" alt="Lay's logo"></a>
+        <button type="button" class="btn btn-outline-danger cbutton1">Contact Us</button>
+        <button type="button" class="btn btn-outline-danger cbutton1">Terms & Conditions</button>
+        <button type="button" class="btn btn-outline-danger cbutton1">Privacy Policy</button>
+        <button type="button" class="btn btn-outline-danger cbutton1">PepsiCo Foodservice</button>
+        <button type="button" class="btn btn-outline-danger cbutton1">Accessibility Statement</button>
+        <button type="button" class="btn btn-outline-danger cbutton1">Cookie Preferences</button>
+      </div>
+    </div>
+    <div class="cc">
+      <h6>© 2022 Pious Boys India, All rights reserved.</h6>
     </div>
   </div>
   <!--Bootstrap JS-->
