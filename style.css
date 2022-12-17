@@ -8,6 +8,7 @@
 
 html {
   cursor: url(assets/cursor.png), auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,7 +22,7 @@ body {
 ::-webkit-scrollbar-track {
   background: #f42625;
   border-radius: 100vw;
-  margin-block: 4.3rem;
+  margin-block: 5rem;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -53,7 +54,7 @@ h5 {
 .face {
   margin: 0% 3%;
   animation-name: animefade;
-  animation-duration: 899ms;
+  animation-duration: 900ms;
   animation-delay: 300ms;
 }
 
@@ -97,7 +98,7 @@ h5 {
   background-size: cover;
   margin: 0% 3%;
   width: 50vw;
-  height: 35vw;
+  height: 50vw;
   padding: 3% 3%;
   border-radius: 3vw;
   position: relative;
@@ -110,13 +111,14 @@ h5 {
   background-size: cover;
   margin: 0% 3%;
   width: 50vw;
-  height: 35vw;
+  height: 50vw;
   padding: 3% 3%;
   border-radius: 3vw;
 }
 
 .foot {
   display: flex;
+  gap: 0vw;
   justify-content: space-around;
 }
 
@@ -130,8 +132,7 @@ h5 {
   transition: transform 300ms ease-in-out;
 }
 
-.posteritem:hover,
-.posteritem:focus-visible {
+.posteritem:hover {
   transform: rotate(-0.3deg);
 }
 
@@ -143,7 +144,8 @@ h5 {
   transition: transform 300ms ease-in-out;
 }
 
-.videoscarousel:hover {
+.videoscarousel:hover,
+.videoscarousel:focus-visible {
   transform: scale(1.05);
   box-shadow: 0px 1px 9px 2.5px black;
 }
@@ -180,6 +182,7 @@ h5 {
   color: #0C0404;
   font-family: 'Carter One', cursive;
   font-size: 19px;
+  border-radius: 5vw;
 }
 
 .mobnav {
@@ -229,6 +232,12 @@ h3 {
 .card {
   transition: transform 300ms ease-out;
   height: auto;
+  border-radius: 3vw;
+}
+
+.card-img-top {
+  border-top-left-radius: 3vw;
+  border-top-right-radius: 3vw;
 }
 
 .card1:hover,
@@ -290,17 +299,17 @@ h3 {
   margin: 3% 5%;
   position: absolute;
   z-index: 1;
-  width: 25vw;
-  top: 7vw;
-  left: 7vw;
+  width: 35vw;
+  top: 9vw;
+  left: 2.5vw;
 }
 
 .likebutton {
   position: absolute;
   z-index: 2;
   transform: rotate(-90deg);
-  top: 9.5vw;
-  left: 9.5vw;
+  top: 14.5vw;
+  left: 14.5vw;
   border-radius: 5vw;
   padding: 1% 1%;
   text-align: center;
@@ -368,36 +377,165 @@ h3 {
   transform: rotateY(180deg);
 }
 
-.toast-container {
-  transform: rotate(-90deg);
+.pint {
+  transition: transform 500ms ease-in-out;
 }
 
-.footnav {
-  margin-bottom: 0%;
-  margin-left: 1.5%;
+.pint:hover {
+  transform: scale(1.37);
+}
+
+.lin {
+  transition: transform 500ms ease-out;
+}
+
+.lin:hover {
+  transform: rotate(-360deg);
+}
+
+.toast-container {
+  transform: rotate(-90deg);
+  margin-bottom: 12.5vw;
+  margin-right: 13vw;
+}
+
+.ytvid {
+  height: 35vw;
+}
+
+.footer {
+  background-color: #ffe63f;
+  height: 9vw;
+  margin-top: 1.5%;
   margin-right: 1.5%;
-  margin-top: 3%;
+  margin-left: 1.5%;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
-  border-bottom-left-radius: 0vw;
-  border-bottom-right-radius: 0vw;
-  height: auto;
+}
+
+.footflex {
+  padding-top: 1.5%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cbutton1 {
+  border-color: transparent;
+  color: #0C0404;
+  font-family: 'Carter One', cursive;
+  font-size: 15px;
+  border-radius: 5vw;
+}
+
+.cc {
+  display: flex;
+  justify-content: center;
+  margin: 0.5% 0%;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 700ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+.hidden1 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+  transition: all 1100ms;
+}
+
+.show1 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.hidden2 {
+  opacity: 0;
+  filter: blur(50px);
+  transform: scale(2);
+  transition: all 700ms;
+}
+
+.show2 {
+  opacity: 1;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+.hidden3 {
+  opacity: 0;
+  filter: blur(50px);
+  transform: translateY(50%);
+  transition: all 700ms;
+}
+
+.show3 {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+.hidden4 {
+  opacity: 0;
+  transform: translateX(7vw);
+  transition: all 900ms;
+}
+
+.show4 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden5 {
+  opacity: 0;
+  transform: translateX(7vw);
+  transition: all 1100ms;
+}
+
+.show5 {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden6 {
+  opacity: 0;
+  transform: translateX(7vw);
+  transition: all 1500ms;
+}
+
+.show6 {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @keyframes animefade {
-
   0% {
-    opacity: 0%;
+    opacity: 0;
   }
 
   50% {
-    opacity: 50%;
+    opacity: 0.5;
   }
 
   100% {
-    opacity: 100%;
+    opacity: 1;
   }
+}
 
+@media(prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
