@@ -138,7 +138,7 @@ h5 {
 
 .videoscarousel {
   margin: 3% 5%;
-  box-shadow: 0px 1px 7px 3px black;
+  box-shadow: 0px 1px 7px 1px black;
   border-radius: 3vw;
   width: 67vw;
   transition: transform 300ms ease-in-out;
@@ -168,6 +168,7 @@ h5 {
 }
 
 .desknav {
+  position: sticky;
   height: auto;
   border-radius: 5vw;
   margin: 1.5% 1.5%;
@@ -190,7 +191,8 @@ h5 {
 }
 
 .txtbox {
-  opacity: 59%;
+  opacity: 0.5;
+  backdrop-filter: blur(7px) saturate(180%);
   border-radius: 100vw;
   width: 9vw;
 }
@@ -201,6 +203,10 @@ h5 {
 
 .items {
   background-color: #febe38;
+}
+
+.navgap {
+  gap: 0.7vw;
 }
 
 .dropdown-item {
@@ -294,6 +300,11 @@ h3 {
   transform: scale(1.1);
 }
 
+.socialflex {
+  display: flex;
+  justify-content: center;
+}
+
 .socialcarousel {
   transform: rotate(90deg);
   margin: 3% 5%;
@@ -382,7 +393,7 @@ h3 {
 }
 
 .pint:hover {
-  transform: scale(1.37);
+  transform: scale(1.09);
 }
 
 .lin {
@@ -411,6 +422,7 @@ h3 {
   margin-left: 1.5%;
   border-top-left-radius: 5vw;
   border-top-right-radius: 5vw;
+  position: sticky;
 }
 
 .footflex {
@@ -444,6 +456,31 @@ h3 {
   opacity: 1;
   filter: blur(0);
   transform: translateX(0);
+}
+
+.dropdown-menu {
+  width: 25vw;
+}
+
+.dropdown-item:hover {
+  background-color: #f11133;
+  color: white;
+}
+
+.sendicon {
+  padding: 0.5vw 0.5vw;
+  width: 3vw;
+  height: 3vw;
+}
+
+.sendbtn {
+  background-color: #ffe657;
+  color: #e23945;
+}
+
+.sendbtn:hover {
+  background-color: #e23945;
+  color: white;
 }
 
 .hidden1 {
@@ -518,6 +555,15 @@ h3 {
   transform: translateX(0);
 }
 
+.hidden7 {
+  opacity: 0;
+  transition: all 1500ms;
+}
+
+.show7 {
+  opacity: 1;
+}
+
 @keyframes animefade {
   0% {
     opacity: 0;
@@ -538,7 +584,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   * {
     margin: 0;
     padding: 0;
@@ -546,6 +592,7 @@ h3 {
 
   html {
     cursor: url(assets/cursor.png), auto;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -574,16 +621,8 @@ h3 {
     background-color: #FFCD19;
   }
 
-  p {
-    color: red;
-  }
-
-  .header {
-    margin: 1.5% 1.5%;
-  }
-
   .navlogo {
-    width: 5vw;
+    width: 9vw;
   }
 
   .cbutton {
@@ -595,9 +634,21 @@ h3 {
 
   .mobnav {
     visibility: visible;
+    position: sticky;
+    height: auto;
+    border-radius: 7vw;
+    margin: 1.5vw 1.5vw;
+
   }
 
   .desknav {
     visibility: hidden;
   }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  body {
+    display: none;
+  }
+
 }
