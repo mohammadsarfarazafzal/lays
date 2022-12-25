@@ -334,7 +334,7 @@ h3 {
   font-size: 3rem;
 }
 
-.likebutton:hover {
+.likebutton:hover,.likebutton:focus-visible {
   background-color: transparent;
   color: #d7000f;
   border: none;
@@ -360,7 +360,7 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.fb:hover {
+.fb:hover,.fb:focus-visible {
   transform: rotate(360deg);
 }
 
@@ -368,7 +368,7 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.yt:hover {
+.yt:hover,.yt:focus-visible {
   transform: scale(0.9);
 }
 
@@ -376,7 +376,7 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.inst:hover {
+.inst:hover,.inst:focus-visible {
   transform: skewY(-9deg);
 }
 
@@ -384,7 +384,7 @@ h3 {
   transition: transform 500ms ease-out;
 }
 
-.twt:hover {
+.twt:hover,.twt:focus-visible {
   transform: rotateY(180deg);
 }
 
@@ -392,7 +392,7 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.pint:hover {
+.pint:hover,.pint:focus-visible {
   transform: scale(1.09);
 }
 
@@ -400,7 +400,7 @@ h3 {
   transition: transform 500ms ease-out;
 }
 
-.lin:hover {
+.lin:hover,.lin:focus-visible {
   transform: rotate(-360deg);
 }
 
@@ -462,7 +462,7 @@ h3 {
   width: 25vw;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,.dropdown-item:focus-visible {
   background-color: #f11133;
   color: white;
 }
@@ -478,7 +478,7 @@ h3 {
   color: #e23945;
 }
 
-.sendbtn:hover {
+.sendbtn:hover,.sendbtn:focus-visible {
   background-color: #e23945;
   color: white;
 }
@@ -597,6 +597,8 @@ h3 {
 
   body {
     background-color: #febe38;
+    width: auto;
+    height: auto;
   }
 
   ::-webkit-scrollbar {
@@ -641,8 +643,19 @@ h3 {
 
   }
 
+  .offcanvas{
+    margin-right: 16.5vw;
+    background-color: #febe38;
+  }
+
+  .header{
+    margin: 1.5vw 1.5vw;
+  }
+  .navbar-toggler-icon:focus-visible{
+    outline-offset: 0.5rem;
+  }
   .desknav {
-    visibility: hidden;
+    display: none;
   }
 }
 
