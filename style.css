@@ -44,7 +44,8 @@ h5 {
   font-family: 'Ubuntu', sans-serif;
   margin: 3% 13%;
   border-radius: 3vw;
-  background-color: #ffc235;
+  width: auto;
+  background-color: rgba(255, 255, 0, 0.25)
 }
 
 .header {
@@ -53,9 +54,9 @@ h5 {
 
 .face {
   margin: 0% 3%;
-  animation-name: animefade;
-  animation-duration: 900ms;
-  animation-delay: 300ms;
+  /* animation-name: animefade;
+  animation-duration: 300ms;
+  animation-delay: 100ms; */
 }
 
 .products {
@@ -106,6 +107,18 @@ h5 {
   left: 0;
 }
 
+.contactform {
+  height: auto;
+  border-radius: 2.1vw;
+  width: 39vw;
+  background-color: #ffad3b;
+}
+
+.formflex {
+  display: flex;
+  justify-content: space-around;
+}
+
 .connect {
   background-image: url(assets/socialback.jpg);
   background-size: cover;
@@ -118,7 +131,6 @@ h5 {
 
 .foot {
   display: flex;
-  gap: 0vw;
   justify-content: space-around;
 }
 
@@ -183,7 +195,16 @@ h5 {
   color: #0C0404;
   font-family: 'Carter One', cursive;
   font-size: 19px;
+  text-align: center;
+  align-items: center;
   border-radius: 5vw;
+  fill: #f11133;
+}
+
+.cbutton:hover,
+.shopicon:hover,
+.recipeicon:hover {
+  fill: white;
 }
 
 .mobnav {
@@ -197,16 +218,53 @@ h5 {
   width: 9vw;
 }
 
+.navgap {
+  gap: 0.7vw;
+}
+
+.form-label {
+  font-family: 'Ubuntu', sans-serif;
+  padding-left: 1vw;
+}
+
+.videoicon {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding-bottom: 0.5vw;
+}
+
+.shopicon {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding-bottom: 0.5vw;
+}
+
+.recipeicon {
+  width: 1.7rem;
+  height: 1.7rem;
+  padding-bottom: 0.5vw;
+}
+
+.h3icon {
+  width: 3rem;
+  height: 3rem;
+  fill: #ffffff;
+  padding-bottom: 0.7vw;
+}
+
+.contactxt {
+  opacity: 0.7;
+  backdrop-filter: blur(7px) saturate(180%);
+  border-radius: 100vw;
+  width: 15vw;
+}
+
 .poster1 {
   height: auto;
 }
 
 .items {
   background-color: #febe38;
-}
-
-.navgap {
-  gap: 0.7vw;
 }
 
 .dropdown-item {
@@ -300,11 +358,6 @@ h3 {
   transform: scale(1.1);
 }
 
-.socialflex {
-  display: flex;
-  justify-content: center;
-}
-
 .socialcarousel {
   transform: rotate(90deg);
   margin: 3% 5%;
@@ -334,7 +387,8 @@ h3 {
   font-size: 3rem;
 }
 
-.likebutton:hover,.likebutton:focus-visible {
+.likebutton:hover,
+.likebutton:focus-visible {
   background-color: transparent;
   color: #d7000f;
   border: none;
@@ -360,7 +414,8 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.fb:hover,.fb:focus-visible {
+.fb:hover,
+.fb:focus-visible {
   transform: rotate(360deg);
 }
 
@@ -368,7 +423,8 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.yt:hover,.yt:focus-visible {
+.yt:hover,
+.yt:focus-visible {
   transform: scale(0.9);
 }
 
@@ -376,7 +432,8 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.inst:hover,.inst:focus-visible {
+.inst:hover,
+.inst:focus-visible {
   transform: skewY(-9deg);
 }
 
@@ -384,7 +441,8 @@ h3 {
   transition: transform 500ms ease-out;
 }
 
-.twt:hover,.twt:focus-visible {
+.twt:hover,
+.twt:focus-visible {
   transform: rotateY(180deg);
 }
 
@@ -392,7 +450,8 @@ h3 {
   transition: transform 500ms ease-in-out;
 }
 
-.pint:hover,.pint:focus-visible {
+.pint:hover,
+.pint:focus-visible {
   transform: scale(1.09);
 }
 
@@ -400,7 +459,8 @@ h3 {
   transition: transform 500ms ease-out;
 }
 
-.lin:hover,.lin:focus-visible {
+.lin:hover,
+.lin:focus-visible {
   transform: rotate(-360deg);
 }
 
@@ -435,8 +495,15 @@ h3 {
   border-color: transparent;
   color: #0C0404;
   font-family: 'Carter One', cursive;
-  font-size: 15px;
+  font-size: 12.5px;
   border-radius: 5vw;
+  text-align: center;
+  align-items: center;
+}
+
+.cbutton1:hover,
+.videoicon:hover {
+  fill: white;
 }
 
 .cc {
@@ -458,11 +525,12 @@ h3 {
   transform: translateX(0);
 }
 
-.dropdown-menu {
-  width: 25vw;
+.productmenu {
+  width: 15vw;
 }
 
-.dropdown-item:hover,.dropdown-item:focus-visible {
+.dropdown-item:hover,
+.dropdown-item:focus-visible {
   background-color: #f11133;
   color: white;
 }
@@ -473,12 +541,23 @@ h3 {
   height: 3vw;
 }
 
-.sendbtn {
-  background-color: #ffe657;
-  color: #e23945;
+.indicators {
+  height: 1vw;
 }
 
-.sendbtn:hover,.sendbtn:focus-visible {
+.carousel-indicators {
+  gap: 1vw;
+}
+
+.sendbtn {
+  color: #e23945;
+  width: 4.9vw;
+  height: 4.9vw;
+  margin: 0.5vw 0.5vw;
+}
+
+.sendbtn:hover,
+.sendbtn:focus-visible {
   background-color: #e23945;
   color: white;
 }
@@ -487,7 +566,7 @@ h3 {
   opacity: 0;
   filter: blur(5px);
   transform: translateY(-100%);
-  transition: all 1100ms;
+  transition: all 700ms;
 }
 
 .show1 {
@@ -557,26 +636,214 @@ h3 {
 
 .hidden7 {
   opacity: 0;
-  transition: all 1500ms;
+  transition: all 500ms;
 }
 
 .show7 {
   opacity: 1;
 }
 
-@keyframes animefade {
+.hidden8 {
+  opacity: 0;
+  transform: translateX(3vw);
+  transition: all 100ms;
+}
+
+.show8 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden9 {
+  opacity: 0;
+  transform: translateX(3vw);
+  transition: all 150ms;
+}
+
+.show9 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden10 {
+  transform: translateX(3vw);
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.show10 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden11 {
+  transform: translateX(3vw);
+  opacity: 0;
+  transition: all 250ms;
+}
+
+.show11 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden12 {
+  transform: translateX(3vw);
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.show12 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden13 {
+  opacity: 0;
+  transform: translateX(3vw);
+  transition: all 350ms;
+}
+
+.show13 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden14 {
+  transform: translateX(3vw);
+  opacity: 0;
+  transition: all 400ms;
+}
+
+.show14 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden15 {
+  transform: translateX(3vw);
+  opacity: 0;
+  transition: all 450ms;
+}
+
+.show15 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden16 {
+  transform: translateX(3vw);
+  opacity: 0;
+  transition: all 500ms;
+}
+
+.show16 {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.hidden17 {
+  opacity: 0;
+  transition: all 100ms;
+}
+
+.show17 {
+  opacity: 1;
+}
+
+.hidden18 {
+  opacity: 0;
+  transition: all 200ms;
+}
+
+.show18 {
+  opacity: 1;
+}
+
+.hidden19 {
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.show19 {
+  opacity: 1;
+}
+
+.hidden20 {
+  opacity: 0;
+  transition: all 350ms;
+}
+
+.show20 {
+  opacity: 1;
+}
+
+.hidden21 {
+  opacity: 0;
+  transition: all 400ms;
+}
+
+.show21 {
+  opacity: 1;
+}
+
+.hidden22 {
+  opacity: 0;
+  transition: all 500ms;
+}
+
+.show22 {
+  opacity: 1;
+}
+
+.hidden23 {
+  opacity: 0;
+  transition: all 600ms;
+}
+
+.show23 {
+  opacity: 1;
+}
+
+.hidden24 {
+  opacity: 0;
+  transition: all 650ms;
+}
+
+.show24 {
+  opacity: 1;
+}
+
+.hidden25 {
+  opacity: 0;
+  transition: all 700ms;
+}
+
+.show25 {
+  opacity: 1;
+}
+
+/* @keyframes animefade {
   0% {
     opacity: 0;
+  }
+
+  25%{
+    opacity: 0.25;
   }
 
   50% {
     opacity: 0.5;
   }
 
+  75%{
+    opacity: 0.75;
+  }
+
   100% {
     opacity: 1;
   }
-}
+} */
 
 @media(prefers-reduced-motion) {
   .hidden {
@@ -643,17 +910,19 @@ h3 {
 
   }
 
-  .offcanvas{
+  .offcanvas {
     margin-right: 16.5vw;
     background-color: #febe38;
   }
 
-  .header{
+  .header {
     margin: 1.5vw 1.5vw;
   }
-  .navbar-toggler-icon:focus-visible{
+
+  .navbar-toggler-icon:focus-visible {
     outline-offset: 0.5rem;
   }
+
   .desknav {
     display: none;
   }
