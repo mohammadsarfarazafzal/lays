@@ -89,44 +89,60 @@
     <div class="mnavigation">
       <nav class="mobnav navbar fixed-top" style="background-color: #ffe63f;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img class="navlogo" src="assets/navlogo.png" alt="Lay's logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar">
+          <a class="navbar-brand" href="https://mohammad-sarfaraz-afzal.github.io/Lays/"><img class="navlogo"
+            src="assets/navlogo.png" alt="Lay's logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                aria-label="Close"></button>
+              <a class="navbar-brand" href="https://mohammad-sarfaraz-afzal.github.io/Lays/"><img class="navlogo"
+                src="assets/navlogo.png" alt="Lay's logo"></a>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <div class="dropdown">
+                    <a class="cbutton btn btn-outline-danger dropdown-toggle" href="#" role="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      Products
+                    </a>
+                    <ul class="items dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+                      <li><a class="dropdown-item" href="#link1">LAY'S</a></li>
+                      <li><a class="dropdown-item" href="#link2">LAY'S BETTER</a></li>
+                      <li><a class="dropdown-item" href="#link3">LAY'S DIPS</a></li>
+                      <li><a class="dropdown-item" href="#link4">LAY'S KETTLE</a></li>
+                      <li><a class="dropdown-item" href="#link5">LAY'S LAYERS</a></li>
+                      <li><a class="dropdown-item" href="#link6">LAY'S POPPABLE</a></li>
+                      <li><a class="dropdown-item" href="#link7">LAY'S STAX</a></li>
+                      <li><a class="dropdown-item" href="#link8">LAY'S WAVY</a></li>
+                      <li><a class="dropdown-item" href="#link9">LAY'S VARIETY</a></li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a href="#sociallink"><button type="button" data-bs-dismiss="offcanvas" class="cbutton btn btn-outline-danger">About Us</button></a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Dropdown
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
+                  <a href="#videoslink"><button type="button" data-bs-dismiss="offcanvas" class="cbutton btn btn-outline-danger">Videos</button></a>
+                </li>
+                <li class="nav-item">
+                  <a href="#recipeslink"><button type="button" data-bs-dismiss="offcanvas" class="cbutton btn btn-outline-danger">Recipes</button></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.amazon.in/Potato-Lays-Chips/s?rh=n%3A4861763031%2Cp_89%3ALay%27s"
+                    target="_blank"><button type="button" data-bs-dismiss="offcanvas" class="cbutton btn btn-outline-danger">Where to Buy</button></a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://youtu.be/xvFZjo5PgG0" target="_blank"><button type="button"
+                      class="cbutton btn btn-outline-danger" data-bs-dismiss="offcanvas">PepsiCo Tasty
+                      Rewards</button></a>
                 </li>
               </ul>
               <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
             </div>
           </div>
