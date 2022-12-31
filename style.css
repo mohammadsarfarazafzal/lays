@@ -443,10 +443,13 @@ h5 {
   border-radius: 5vw;
   padding: 1% 1%;
   text-align: center;
+  background-color: transparent;
   border: none;
+  color: transparent;
 }
 
 .heart {
+  background-color: transparent;
   padding-top: 1vw;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -455,7 +458,6 @@ h5 {
 
 .likebutton:hover,
 .likebutton:focus-visible {
-  background-color: transparent;
   color: #d7000f;
   border: none;
 }
