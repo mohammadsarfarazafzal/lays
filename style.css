@@ -1587,6 +1587,10 @@ h5 {
   .cookieprf {
     display: none;
   }
+
+  .accesibilitystm {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 501px) and (max-width: 900px) {
