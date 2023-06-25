@@ -1,3 +1,7 @@
+var loader = document.getElementById("preload");
+window.addEventListener("load",function(){
+  loader.style.display = "none";
+})
 const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 const alert = (message, type) => {
   const wrapper = document.createElement("div");
