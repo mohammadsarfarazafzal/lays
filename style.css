@@ -153,7 +153,7 @@ h5 {
 
 .recipescarousel {
   margin: 3% 5%;
-  box-shadow: 0px 11px 25px 3px black;
+  box-shadow: 0px 0.7px 11px 1.7px black;
   border-radius: 3vw;
 }
 
@@ -170,14 +170,14 @@ h5 {
   margin: 3% 5%;
   box-shadow: 0px 1px 7px 1px black;
   border-radius: 3vw;
-  width: 67vw;
+  width: 87vw;
   transition: transform 300ms ease-in-out;
 }
 
 .videoscarousel:hover,
 .videoscarousel:focus-visible {
   transform: scale(1.05);
-  box-shadow: 0px 1px 9px 2.5px black;
+  box-shadow: 0px 1px 5px 1px black;
 }
 
 .carouselinner {
@@ -1002,6 +1002,10 @@ h5 {
   opacity: 1;
 }
 
+.videoscarouselbtn {
+  width: 2.1vw;
+}
+
 /* @keyframes animefade {
   0% {
     opacity: 0;
@@ -1755,5 +1759,8 @@ h5 {
     padding: 0% 5.9%;
     font-family: "Ubuntu", sans-serif;
     font-size: 1.79rem;
+  }
+  .card-text {
+    display: none;
   }
 }
