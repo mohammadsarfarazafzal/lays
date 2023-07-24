@@ -1,6 +1,9 @@
 var loader = document.getElementById("preload");
-window.addEventListener("load", function () {
+var main = document.getElementById("mainid");
+main.style.display = "none";
+window.addEventListener("load", () => {
   loader.style.display = "none";
+  main.style.display = "unset";
 });
 const alertPlaceholder = document.getElementById("liveAlertPlaceholder");
 const alert = (message, type) => {
@@ -60,6 +63,7 @@ const observer1 = new IntersectionObserver((entries) => {
       entry.target.classList.add("show1");
     } else {
       entry.target.classList.remove("show1");
+      entry.target.classList.remove("hidden1");
     }
   });
 });
